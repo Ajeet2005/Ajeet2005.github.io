@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="menu.png" class="menu-img">
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Modern</a></li>
+
+                <li><a href="">Contempory</a></li>
+
+                <li><a href="">Affordable</a></li>
+          
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+            </ul>
+        </nav>
+        <div class="lamp-container">
+            <img src="lamp.png" class="lamp">
+            <img src="light.png" class="light" id="light">
+            
+        </div>
+        <div class="text-container">
+            <h1>Latest <br>in Lighting.</br></h1>
+            <p><b>Though Thomas Edison </b>is usually credited as the man who invented the lightbulb.<br></p>
+            
+            <p>An incandescent light bulb, incandescent lamp or incandescent light globe is an electric light with a filament that is heated until it glows</br></p>
+                <a href="">Check All Collection</a>
+                <div class="control">
+                    <p>04</p>
+                    <div class="line"><span></span></div>
+                    <p>05</p>
+                </div>
+        </div>
+    </div>
+
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+
+        function toggleBtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+
+        }
+    </script>
+    
+</body>
+</html>
